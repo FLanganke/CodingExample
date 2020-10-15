@@ -18,7 +18,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"Peter10\",\r\n    \"password\": \"12345\"\r\n}"
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"pleaseChange\"\r\n}"
 				},
 				"url": {
 					"raw": "localhost:3000/api/v1/users/login",
