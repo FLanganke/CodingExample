@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "4729341a-1af2-48ea-87c8-0a0825aa0b3c",
+		"name": "CodingExample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/v1/users/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Peter10\",\r\n    \"password\": \"12345\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					]
+				},
+				"description": "Login User Peter10"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/userhobbies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlzQWRtaW4iOnRydWUsImlhdCI6MTYwMjY1MTQ2Mn0.fqSfRhhNikWMTf3BkXz1i8D95n3AVMQAHkJutarcxt8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/userhobbies",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"userhobbies"
+					]
+				},
+				"description": "Get Hobbies for current User"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/userhobbies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjE1LCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjAyMzk0NzQ5fQ.SOC6Y4DTCRX95hQyJlPaBBChDuf0M6iiDZD0slFqvqM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"hiking\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/userhobbies",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"userhobbies"
+					]
+				},
+				"description": "Add hobby for current user"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/userhobbies",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjMsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2MDI2NTM0NzV9.lciapKyliUya7Qz6gpkibU7x0IeuiurWQEGx8IKkYDU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"4\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/userhobbies",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"userhobbies"
+					]
+				},
+				"description": "Delete hobby for User Peter10"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/users/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"peter10\",\r\n    \"password\": \"12345\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"login"
+					]
+				},
+				"description": "Login user peter10"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2MDI2NTA5ODZ9.hSACtDbFt-wkMCMF0j_MngtQZPIKTf9Nw9v3CDO3h80",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Peter10\",\r\n    \"password\": \"12345\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				},
+				"description": "add User Peter10"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlzQWRtaW4iOnRydWUsImlhdCI6MTYwMjY1MTQ2Mn0.fqSfRhhNikWMTf3BkXz1i8D95n3AVMQAHkJutarcxt8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"15\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				},
+				"description": "Get all users (admin)"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/userhobbies/forUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlzQWRtaW4iOnRydWUsImlhdCI6MTYwMjY1MTQ2Mn0.fqSfRhhNikWMTf3BkXz1i8D95n3AVMQAHkJutarcxt8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/userhobbies",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"userhobbies"
+					]
+				},
+				"description": "Get Hobbies for other user (admin)"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/users",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlzQWRtaW4iOnRydWUsImlhdCI6MTYwMjY1MTQ2Mn0.fqSfRhhNikWMTf3BkXz1i8D95n3AVMQAHkJutarcxt8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"2\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				},
+				"description": "delete User (admin)"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/users",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2MDI2NTA5ODZ9.hSACtDbFt-wkMCMF0j_MngtQZPIKTf9Nw9v3CDO3h80",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"username\": \"Peter10\",\r\n    \"password\": \"12345\",\r\n    \"isAdmin\": \"false\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				},
+				"description": "update User Peter10"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/v1/users/current",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlzQWRtaW4iOnRydWUsImlhdCI6MTYwMjY1MTQ2Mn0.fqSfRhhNikWMTf3BkXz1i8D95n3AVMQAHkJutarcxt8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"15\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/users/current",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"current"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
